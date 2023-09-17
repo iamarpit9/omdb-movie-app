@@ -1,0 +1,68 @@
+.img-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem;
+  position: relative;
+  transition: transfrom 0.2s ease-in-out;
+}
+
+.img-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.img-container .poster {
+  height: 450px;
+  width: 325px;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 90%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  height: 8rem;
+}
+
+.movie-info {
+  text-align: center;
+  padding: 2rem;
+}
+
+.movie-info p {
+  font-weight: 900;
+}
+
+p span {
+  font-size: 1.1rem;
+}
+
+.overlay button {
+  height: 2.2rem;
+  position: absolute;
+  border: none;
+  background: none;
+  top: 0;
+  right: 0;
+}
+
+.overlay button img {
+  height: 2rem;
+}
+
+.overlay button img:hover {
+  transform: scale(1.1);
+}
